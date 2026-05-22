@@ -1,0 +1,14 @@
+name: pull request Workflow
+
+on: 
+   pull_request:
+    branches:
+      - main
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Hello GitHub Actions!"
